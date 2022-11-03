@@ -1,4 +1,7 @@
-# Equipe:
+# On Stock - um e-commerce para streamers
+Trabalho desenvolvido para a disciplina de Programação Web I 
+
+### Equipe:
 
 Marcos patrick saraiva da silva - 496459 <Br />
 Igor mourão das neves - 494749 <Br />
