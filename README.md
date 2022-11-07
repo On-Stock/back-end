@@ -3,10 +3,10 @@ Trabalho desenvolvido para a disciplina de Programação Web I
 
 ### Equipe:
 
-Marcos patrick saraiva da silva - 496459 <Br />
-Igor mourão das neves - 494749 <Br />
-Myguel Angello maciel de abreu - 495849 <Br />
-Reinaldo da silva nascimento - 499899 <Br />
+Marcos Patrick Saraiva da Silva - 496459 <Br />
+Igor Mourão das Neves - 494749 <Br />
+Myguel Angello Maciel de Abreu - 495849 <Br />
+Reinaldo da Silva Nascimento - 499899 <Br />
 
 
 Front: 

@@ -17,7 +17,7 @@ export const ensuredAuthenticated = () => {
     }
 
     //verificar se o token está no formato certo
-    //Ex: Bearer ghdngnbjjjwpmxbahs876739vyghfiv
+    //Ex: Bearer 3456789876555367
     const parts = authHeader.split(' ');
 
     if (parts.length !== 2) {

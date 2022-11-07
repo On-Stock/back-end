@@ -5,6 +5,7 @@ import { router } from './routes';
 
 const app = express();
 app.use(express.json());
+//app.use(express.urlencoded({ extended: false }));// dps mudar para true e testar
 app.use(cors());
 
 //app.use(express.urlencoded({ extended: false }))
