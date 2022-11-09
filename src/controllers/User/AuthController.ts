@@ -26,6 +26,6 @@ export class AuthController {
 
     const token = generateToken({ id: user.id })
 
-    return response.json(token);
+    return response.json({ token: token, status: "success", role: "admin" });
   }
 }

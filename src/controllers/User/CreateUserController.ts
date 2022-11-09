@@ -32,6 +32,16 @@ export class CreateUserController {
       phone
     } = request.body as UserResquest;
 
+    let userExists = await prismaClient.user.findUnique({
+      where: {
+        email
+      }
+    })
+
+    if (userExists) {
+      return response.json({ status: "failed", message: 'Este email já está cadastrado.' });
+    }
+
     const hash_password = await hash(password, 8)
 
     const result = await prismaClient.user.create({

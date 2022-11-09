@@ -1,8 +1,8 @@
 import express from "express"
-import session from 'express-session'
+import sessions from 'express-session'
 const app = express()
 
-app.use(session({
+app.use(sessions({
   // Contém a chave secreta da sessão
   secret: process.env.SECRET_JWT,
 
@@ -15,4 +15,4 @@ app.use(session({
   saveUninitialized: true
 }));
 
-export { session }
+export { sessions }
