@@ -7,6 +7,12 @@ export class AuthController {
   async handle(request: Request, response: Response) {
     const { email, password } = request.body;
 
+    if (!email || !password) {
+
+      return console.log(`email: ${email}, password: ${password}`);
+    }
+    console.log(`email: ${email}, password: ${password}`);
+
 
     const user = await prismaClient.user.findUnique({
       where: {
@@ -24,8 +30,8 @@ export class AuthController {
       return response.json({ failed: "Email ou senha incorretos." })
     }
 
-    const token = generateToken({ id: user.id })
+    const token = generateToken({ id: user.id, role: user.role })
 
-    return response.json({ token: token, status: "success", role: "admin" });
+    return response.json({ token: token, status: "success", role: user.role });
   }
 }

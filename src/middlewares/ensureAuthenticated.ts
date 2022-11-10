@@ -4,6 +4,7 @@ import { decode, verify } from "jsonwebtoken";
 
 type TokenPayload = {
   id?: string;
+  role?: string;
   iat: number;
   exp: number;
 }
@@ -35,8 +36,9 @@ export const ensuredAuthenticated = () => {
     try {
       verify(token, process.env.SECRET_JWT);
 
-      const { id } = decode(token) as TokenPayload;
+      const { id, role } = decode(token) as TokenPayload;
       request.userId = id
+      request.userRole = role
 
       return next();
     } catch (err) {
