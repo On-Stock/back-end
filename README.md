@@ -10,11 +10,11 @@ Reinaldo da Silva Nascimento - 499899 <Br />
 
 
 Front: 
-https://github.com/igorNeves007/on-stock/tree/main/front
+https://github.com/On-Stock/front-end
 
 
 Back:
-https://github.com/MarcosPatrickExe/server-on-stock.git
+https://github.com/On-Stock/back-end
 
 
 
@@ -26,10 +26,10 @@ https://github.com/MarcosPatrickExe/server-on-stock.git
 
 
 Entidade User
-  id       String  @id @default(uuid())
-  name     String
-  email    String  @unique
-  login    String
-  password String
-  address  String?
-  role     Role    @default(CUSTOMER)
+  id       String  @id @default(uuid())  <br/>
+  name     String <br/>
+  email    String  @unique <br/>
+  login    String <br/>
+  password String <br/> 
+  address  String? <br/>
+  role     Role    @default(CUSTOMER) 
