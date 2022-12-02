@@ -32,6 +32,7 @@ export class AuthController {
 
     const token = generateToken({ id: user.id, role: user.role })
 
-    return response.json({ token: token, status: "success", role: user.role, logged: "yes" });
+
+    return response.json({ token: token, status: "success", logged: "yes", user });
   }
 }
